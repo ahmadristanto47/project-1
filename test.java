@@ -17,7 +17,7 @@ public class Array2 {
     	dollar = dollar*14000;
     	
     	JOptionPane.showMessageDialog(null,"hasil konfersi ke dollar $:"+rupiah+"\n"+""+"hasil konfersi dollar ke rupiah rp:" +dollar);
-    	
+    	//asdasdasd
     }
     
 }
