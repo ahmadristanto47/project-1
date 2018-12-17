@@ -1,17 +1,23 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Array2 {
 
     public static void main(String[] args) {
-        Scanner masukan = new Scanner(System.in);
-        float rupiah, dolar, euro;
-        System.out.print("Masukan Rupiah = ");
-        rupiah = masukan.nextFloat();
-        dolar = (float) (rupiah*0.0001);
-        euro = (float) (rupiah*0.00004);
-        System.out.println();
-        System.out.println("Hasil Kurs = ");
-        System.out.println("Dolar = " + dolar);
-        System.out.println("Euro = " + euro);
+        
+    	String rupiahInput , dollarInput;
+    	double rupiah , dollar;
+    	rupiahInput = JOptionPane.showInputDialog("masukan nilai ke rupiah : ");
+    	rupiah = double.parseDouble(rupiahInput);
+    	dollarInput = JOptionPane.showInputDialog("masukan nilai ke dollar : ");
+    	dollar = double.parseDouble(dollarInput);
+    	
+    	rupiah = rupiah/14000;
+    	dollar = dollar*14000;
+    	
+    	JOptionPane.showMessageDialog(null,"hasil konfersi ke dollar $:"+rupiah+"\n"+""+"hasil konfersi dollar ke rupiah rp:" +dollar);
+    	
     }
+    
 }
